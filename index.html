@@ -1,0 +1,43 @@
+<html>
+    <head><title>My First Js Class Project</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h1>Project on console</h1>
+        <p id="p">Write about <b>Visual Studio Code</b> and how to initalize it up.</p>
+        <p id="p2">Write about console screen. And why it is use. And how to open console screen and how to print anything on console</p>
+        <br>
+        <br>
+
+        <button class="button_show" onclick="call_name()">click me to see result on screen!</button>
+        <p id="result"></p>
+        </center>
+
+        <!--Js code begins here-->
+        <script>
+            console.log("My first console project");
+
+            var num1 = 10;
+            var num2 = 5;
+
+            var f_name = "ranbir";
+            var l_name = "kapoor";
+
+            var full_name = console.log(f_name.concat(l_name));
+
+            function call_name(){
+            var full_name = f_name.concat(l_name);
+            document.getElementById("result").innerHTML = full_name;
+            }
+
+            var add = console.log(num1 + num2);
+
+            var sub = console.log(num1 - num2);
+
+            var mul = console.log(num1 * num2);
+
+            var div = console.log(num1 / num2);
+        </script>
+    </body>
+</html>
